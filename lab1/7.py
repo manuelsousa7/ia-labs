@@ -1,17 +1,17 @@
 class p_aspirador_ex_7:
 
     def __init__(self, lixo):
-        self.lixo = lixo
+        self.lixo1 = lixo
 
     def lixo(self):
-        return self.lixo
+        return self.lixo1
 
 
 p51 = p_aspirador_ex_7(True)
 p52 = p_aspirador_ex_7(False)
 
 
-def agente_aspirador_ex_7():
+class agente_aspirador_ex_7():
     def __init__(self):
         self.casaslimpas = 0
 
@@ -27,5 +27,5 @@ def agente_aspirador_ex_7():
 
 
 a_e7 = agente_aspirador_ex_7()
-a_e7.invoca(p51)
-a_e7.invoca(p52)
+print a_e7.invoca(p51)
+print a_e7.invoca(p52)
